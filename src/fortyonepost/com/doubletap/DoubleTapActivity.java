@@ -39,6 +39,9 @@ public class DoubleTapActivity extends Activity implements OnGestureListener
         setContentView(R.layout.main);
         
         //get the TextView from the XML file
+		//get the TextView from the XML file
+		//get the TextView from the XML file
+		//get the TextView from the XML file
         tvTap = (TextView)findViewById(R.id.tvTap);
         //get the other TextView from the XML file
         tvTapEvent = (TextView)findViewById(R.id.tvTapEvent);
