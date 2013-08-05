@@ -16,7 +16,6 @@ before_install:
 before_script:
   - pwd
   - ls -la
-  - ls -la  actionbarsherlock
   - ls -la  android-sdk-linux
   - ls -la  android-sdk-linux/platform-tools
   - ls -laR android-sdk-linux/build-tools/
