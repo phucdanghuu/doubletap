@@ -1,7 +1,6 @@
 #!/bin/bash
 FAILED=0
-sudo mkdir /sdcard
-sudo chmod 777 /sdcard
+sudo chmod -R 777 ./*
 ant clean build-and-test
 ant clean debug
 if [ "$?" = 1 ]; then
