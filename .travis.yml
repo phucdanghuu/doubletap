@@ -13,3 +13,14 @@ before_install:
   # now get a runtime environment, the latest revision of Android (4.2.2) should do.
   - android update sdk --filter android-17,sysimg-17,tools,platform-tools,extra-android-support --no-ui --force
   - echo y | android update sdk --filter build-tools-18.0.1 --no-ui --force  
+before_script:
+  - pwd
+  - ls -la
+  - ls -la  actionbarsherlock
+  - ls -la  android-sdk-linux
+  - ls -la  android-sdk-linux/platform-tools
+  - ls -laR android-sdk-linux/build-tools/
+  - ls -laR android-sdk-linux/build-tools/18.0.1/
+  - ls -la  android-sdk-linux/build-tools/18.0.1/aapt
+  # Just see if aapt can be run now it's been installed
+  - file ./android-sdk-linux/build-tools/18.0.1/aapt
