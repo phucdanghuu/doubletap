@@ -25,4 +25,3 @@ before_script:
   - file ./android-sdk-linux/build-tools/18.0.1/aapt
   - chmod +777 ./buildstuff.sh
 script: "./buildstuff.sh"
-
