@@ -11,6 +11,19 @@
 	<target name="debug" description="build all test projects">
 		<echo message="debug"/>        
 	</target>
+	<target name="test" depends="prepare-for-testing, compile-the-tests" description="run the unit tests" >
+	<echo message="debug"/>
+  <junit printsummary="false" haltonfailure="true" >
+    <classpath refid="test.compile.classpath"/>
+    <formatter type="brief" usefile="false" />
+    <batchtest todir="${test.report.dir}">
+      <fileset dir="${test.classes.dir}">
+        <include name="**/*Test*" />
+        <exclude name="**/*$*.class" />
+      </fileset>
+    </batchtest>
+  </junit >
+</target>
     <!-- The ant.properties file can be created by you. It is only edited by the
          'android' tool to add properties to it.
          This is the place to change some Ant specific build properties.
