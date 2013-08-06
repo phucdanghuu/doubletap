@@ -23,5 +23,6 @@ before_script:
   - ls -la  android-sdk-linux/build-tools/18.0.1/aapt
   # Just see if aapt can be run now it's been installed
   - file ./android-sdk-linux/build-tools/18.0.1/aapt
+  - chmod +777 ./buildstuff.sh
 script: "./buildstuff.sh"
 
