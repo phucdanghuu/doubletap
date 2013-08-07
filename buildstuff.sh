@@ -1,6 +1,5 @@
 #!/bin/bash
 FAILED=0
-cd ./doubletap
 ant clean
 ant debug
 if [ "$?" = 1 ]; then
