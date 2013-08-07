@@ -2,8 +2,8 @@ language: java
 before_script: 
 #http://dl.google.com/android/android-sdk_r21.1-linux.tgz
 #http://dl.google.com/android/android-sdk_r18-linux.tgz 
-    - sudo wget -q http://dl.google.com/android/android-sdk_r21.1-linux.tgz
-    - sudo tar xzvf android-sdk_r21.1-linux
+    - sudo wget -q http://dl.google.com/android/android-sdk_r18-linux.tgz 
+    - sudo tar xzvf android-sdk_r18-linux.tgz
     - sudo android-sdk-linux/tools/android -s update sdk --filter android-17,platform-tool --no-ui
     - sudo android-sdk-linux/tools/android -s update project --path ./doubletap
     - sudo chmod -R 777 ./*
