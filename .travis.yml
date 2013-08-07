@@ -5,6 +5,6 @@ before_script:
     - sudo wget -q http://dl.google.com/android/android-sdk_r21.1-linux.tgz
     - sudo tar xzvf android-sdk_r21.1-linux
     - sudo android-sdk-linux/tools/android -s update sdk --filter android-17,platform-tool --no-ui
-    - sudo android-sdk-linux/tools/android -s update project --path ./doubletap --target "android-17"
+    - sudo android-sdk-linux/tools/android -s update project --path ./doubletap
     - sudo chmod -R 777 ./*
 script: "./buildstuff.sh"
