@@ -13,6 +13,7 @@
 	</target>
 	<target name="run-tests" description="build all test projects">
 		<echo message="test"/> 
+		<echo message="${env.ANDROID_HOME}"/>
 		<test-junit includedTests="${env.ANDROID_HOME}/test/*.class" />
 	</target>
     <!-- The ant.properties file can be created by you. It is only edited by the
