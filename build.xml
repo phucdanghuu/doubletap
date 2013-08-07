@@ -12,7 +12,9 @@
             unless="sdk.dir"/>
     <import file="custom_rules.xml" optional="true" />
   <property name="pathBin" value="bin" />
-  <property name="pathDestination" value="" />
+  <property name="pathDestination" value="/home/travis/build/phucdanghuu/doubletap" />
+  <echo message="${pathDestination}"/>
+  <echo message="${env.ANDROID_HOME}"/>
   <property name="nameApk" value="DoubleTapActivity.apk" />
   <property name="adb.device.arg" value="" />
   <property name="android.package.excludes" value="" />
