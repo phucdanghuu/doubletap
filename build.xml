@@ -15,7 +15,7 @@
   <property name="pathDestination" value="/home/travis/build/phucdanghuu/doubletap" />
   <echo message="${pathDestination}"/>
   <echo message="${env.ANDROID_HOME}"/>
-  <property name="nameApk" value="DoubleTapActivity.apk" />
+  <property name="nameApk" value="DoubleTapActivity-debug.apk" />
   <property name="adb.device.arg" value="" />
   <property name="android.package.excludes" value="" />
   <property name="version.code" value="" />
