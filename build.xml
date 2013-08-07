@@ -5,17 +5,7 @@
          It contains the path to the SDK. It should *NOT* be checked into
          Version Control Systems. -->
     <property file="local.properties" />
-	<target name="clean" description="removes old files, copies new reference DLLs">
-		<echo message="clean"/>
-	</target>
-	<target name="debug" description="debug">
-		<echo message="debug"/>        
-	</target>
-	<target name="run-tests" description="build all test projects">
-		<echo message="test"/> 
-		<echo message="${env.ANDROID_HOME}"/>
-		<test-junit includedTests="${env.ANDROID_HOME}/test/*.class" />
-	</target>
+
     <!-- The ant.properties file can be created by you. It is only edited by the
          'android' tool to add properties to it.
          This is the place to change some Ant specific build properties.
